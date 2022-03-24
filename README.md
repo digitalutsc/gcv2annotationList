@@ -2,11 +2,11 @@
 
 ### Step 1: Download.
 
-`git clone https://github.com/AndrewEffendi/gcv2anno_list.git`
+`git clone git@github.com:AndrewEffendi/gcv2annotationList.git`
 
-### Step 2: Move into the gcv2anno_list directory.
+### Step 2: Move into the gcv2annotationList directory.
 
-`cd gcv2anno_list`
+`cd gcv2annotationList`
 
 ### Step 3: Compile the code.
 
