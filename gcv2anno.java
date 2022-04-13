@@ -25,7 +25,7 @@ public class gcv2anno {
         // create new JSONObject to write output
         JSONObject outJSONObject = new JSONObject();
         outJSONObject.put("@context", "http://iiif.io/api/presentation/2/context.json");
-        outJSONObject.put("@id", "https://islandora.traefik.me/anolist.json");
+        outJSONObject.put("@id", "https://islandora.traefik.me/" + OUTPUT_PATH);
         outJSONObject.put("@type", "sc:AnnotationList");
         JSONArray resources = new JSONArray();
 

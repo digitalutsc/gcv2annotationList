@@ -3,7 +3,7 @@
 ### Step 1: Download.
 
 ```
-https://github.com/AndrewEffendi/gcv2annotationList.git
+git clone https://github.com/AndrewEffendi/gcv2annotationList.git
 ```
 
 ### Step 2: Move into the gcv2annotationList directory.
