@@ -38,6 +38,8 @@ public class gcv2anno {
         for(Object page: pages){
           JSONArray blocks = (JSONArray) ((JSONObject)page).get("blocks");
           for(Object block: blocks){
+          //check if block is of type text
+          if(((JSONObject)block).get("blockType").equals("TEXT")){
             JSONArray paragraphs = (JSONArray) ((JSONObject)block).get("paragraphs");
             for(Object paragraph: paragraphs){
               JSONArray vertices = (JSONArray)(((JSONObject)((JSONObject)paragraph).get("boundingBox"))).get("vertices");
@@ -104,6 +106,7 @@ public class gcv2anno {
               // add the resourcesObject to the resourcesArray
               resourcesArray.add(resourcesObject);
             }
+          }   
           }
         }
         // add the resourcesArray to the outJSONObject
