@@ -9,7 +9,7 @@ import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
-import java.net.*;
+import java.net.ServerSocket;
 
 public class gcv2anno {
     private static FileWriter file;
