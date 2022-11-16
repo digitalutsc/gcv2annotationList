@@ -28,7 +28,7 @@ public class gcv2anno {
         JSONObject outJSONObject = new JSONObject();
         // store the context, id, and type to the output JSONObject
         outJSONObject.put("@context", "http://iiif.io/api/presentation/2/context.json");
-        outJSONObject.put("@id", "https://islandora.traefik.me/" + OUTPUT_PATH);
+        outJSONObject.put("@id", "https://core.digital.utsc.utoronto.ca/" + OUTPUT_PATH);
         outJSONObject.put("@type", "sc:AnnotationList");
         // initialize resourcesArray (the array that stores the annotations)
         JSONArray resourcesArray = new JSONArray();
@@ -88,7 +88,8 @@ public class gcv2anno {
 
               // add the information retrived to the resourcesObject
               JSONObject resourcesObject = new JSONObject();
-              resourcesObject.put("@id", "http://localhost:" + serverSocket.getLocalPort() + "/annotation/"+ paragraph.hashCode());
+              //resourcesObject.put("@id", "http://localhost:" + serverSocket.getLocalPort() + "/annotation/"+ paragraph.hashCode());
+              resourcesObject.put("@id", "https://dsu-data.utsc.utoronto.ca:8443/simpleAnnotationStore" + "/annotation/"+ paragraph.hashCode());
               resourcesObject.put("@type", "oa:Annotation");
               resourcesObject.put("@context", "http://iiif.io/api/presentation/2/context.json");
               resourcesObject.put("on", CANVAS + "#xywh=" + x + "," + y + "," + w + "," + h);
